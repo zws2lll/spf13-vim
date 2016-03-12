@@ -91,7 +91,7 @@
     " In your .vimrc.before.local file
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
-        let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
+        let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'latex', 'misc',]
     endif
 
     " To override all the included bundles, add the following to your
@@ -294,6 +294,11 @@
         endif
     " }
 
+    " latex {
+        if count(g:spf13_bundle_groups, 'latex')
+            Bundle 'LaTeX-Box-Team/LaTeX-Box'
+        endif
+    " }
     endif
 
 " }
