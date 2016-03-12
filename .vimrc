@@ -637,6 +637,15 @@
             let g:pymode_rope = 0
         endif
     " }
+    
+    " Latex {
+        if isdirectory(expand("~/.vim/bundle/LateX-Box/"))
+            let g:LatexBox_latexmk_preview_continuously = 1
+            "let g:LatexBox_viewer = "open -a Skim"
+            let g:LatexBox_viewer = "open /Applications/Preview.app"
+        endif
+    " }
+
 
     " ctrlp {
         if isdirectory(expand("~/.vim/bundle/ctrlp.vim/"))
